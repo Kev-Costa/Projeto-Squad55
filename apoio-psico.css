@@ -1,0 +1,131 @@
+        /* Conteúdo Principal */
+        .conteudo {
+            padding: 40px 20px;
+            background-color: #fff;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .conteudo img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .conteudo h1 {
+            font-size: 36px;
+            color: #6A5ACD;
+            margin-bottom: 20px;
+        }
+
+		.conteudo h2 {
+		    color: #6A5ACD;
+			margin-bottom: 30px;
+		}
+		
+        .conteudo p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .conteudo ul {
+            margin-bottom: 20px;
+			list-style-type: none;
+            padding: 0;
+			margin-bottom:20px;
+        }
+
+        .conteudo ul li {
+            margin-bottom: 10px;
+			background: #eee;
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #6A5ACD;
+        }
+
+        /* Formulário de Agendamento */
+        .consulta-form {
+            margin-bottom: 40px;
+        }
+
+        .consulta-form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .consulta-form input,
+        .consulta-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .consulta-form button {
+            padding: 10px 20px;
+            background-color: #6A5ACD;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .consulta-form button:hover {
+            background-color: #7B68EE;
+        }
+
+        /* Avaliações de Pacientes */
+        .testimonials {
+            margin-top: 40px;
+        }
+
+        .testimonial-card {
+            display: flex;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .testimonial-card .testimonial-content {
+            flex: 1;
+        }
+
+        .testimonial-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-card .rating {
+            color: #FFD700; /* Cor das estrelas */
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .conteudo {
+                padding: 20px;
+            }
+
+            .conteudo h1 {
+                font-size: 28px;
+            }
+        }
