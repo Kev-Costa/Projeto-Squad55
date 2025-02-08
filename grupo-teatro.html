@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" itemscope itemtype="http://schema.org/WebPage">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cena pela Diversidade - PrideHub</title>
-	<link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
+    <meta name="description" content="Conheça o grupo de teatro 'Cena pela Diversidade', uma iniciativa do PrideHub que utiliza a arte para promover inclusão, respeito e combate ao bullying nas escolas.">
+    <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
     <link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
@@ -14,6 +15,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Schema.org para a organização PrideHub -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PrideHub",
+        "url": "https://www.pridehub.com",
+        "logo": "https://www.pridehub.com/img/logo.png",
+        "description": "PrideHub é um portal que integra serviços e recursos para a comunidade LGBTQIA+, com foco em saúde, educação e empoderamento para reduzir as desigualdades.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55 (99) 99999-9999",
+            "contactType": "customer service",
+            "email": "contato@pridehub.com",
+            "areaServed": "BR"
+        },
+        "sameAs": [
+            "https://www.facebook.com/pridehub",
+            "https://www.instagram.com/pridehub",
+            "https://www.twitter.com/pridehub"
+        ]
+    }
+    </script>
 </head>
 <body>
 
@@ -72,7 +96,7 @@
                     <li><a href="#">Concurso LGBT</a></li>
                 </ul>
             </li>
-			<li><a` href="login.html" class="nav-link">Login</a></li>
+            <li><a href="login.html" class="nav-link">Login</a></li>
         </ul>
         <div class="search-bar">
             <input type="text" placeholder="Pesquisar...">
@@ -82,26 +106,53 @@
 
     <!-- Conteúdo Principal -->
     <div class="conteudo">
-        <img src="img/grupo-teatro.jpg" alt="Grupo Teatral Cena pela Diversidade">
-        <h1>Apresentação do Grupo de Teatro "Cena pela Diversidade"</h1>
-        <p>O grupo de teatro <strong>"Cena pela Diversidade"</strong> surge como um espaço de arte, diálogo e transformação social. Nosso objetivo é utilizar o poder do teatro para abordar temas urgentes e sensíveis, como a <strong>diversidade LGBT+, o combate ao preconceito e o bullying</strong> enfrentado por jovens adolescentes. Através de roteiros criativos, esquetes envolventes e peças teatrais impactantes, buscamos promover a conscientização, o respeito e a empatia em ambientes escolares e comunitários.</p>
-        
-        <p>Nossas histórias são inspiradas em vivências reais, trazendo personagens e situações que refletem os desafios e as conquistas da comunidade LGBT+. Com linguagem acessível e abordagem sensível, nossas apresentações são desenvolvidas para <strong>dialogar diretamente com o público jovem</strong>, incentivando a reflexão e o debate sobre temas como identidade de gênero, orientação sexual, respeito às diferenças e o impacto do bullying no dia a dia dos estudantes.</p>
+        <article itemscope itemtype="http://schema.org/Article">
+            <header>
+                <img src="img/grupo-teatro.jpg" alt="Grupo Teatral Cena pela Diversidade" itemprop="image">
+                <h1 itemprop="headline">Apresentação do Grupo de Teatro "Cena pela Diversidade"</h1>
+            </header>
+            <div itemprop="articleBody">
+                <p>O grupo de teatro <strong>"Cena pela Diversidade"</strong> surge como um espaço de arte, diálogo e transformação social. Nosso objetivo é utilizar o poder do teatro para abordar temas urgentes e sensíveis, como a <strong>diversidade LGBT+, o combate ao preconceito e o bullying</strong> enfrentado por jovens adolescentes. Através de roteiros criativos, esquetes envolventes e peças teatrais impactantes, buscamos promover a conscientização, o respeito e a empatia em ambientes escolares e comunitários.</p>
+                
+                <p>Nossas histórias são inspiradas em vivências reais, trazendo personagens e situações que refletem os desafios e as conquistas da comunidade LGBT+. Com linguagem acessível e abordagem sensível, nossas apresentações são desenvolvidas para <strong>dialogar diretamente com o público jovem</strong>, incentivando a reflexão e o debate sobre temas como identidade de gênero, orientação sexual, respeito às diferenças e o impacto do bullying no dia a dia dos estudantes.</p>
 
-        <h2>Por que levar o "Cena pela Diversidade" para sua escola ou ONG?</h2>
-        <ul>
-            <li><strong>Conscientização:</strong> Nossas peças ajudam a desconstruir estereótipos e preconceitos, promovendo um ambiente mais inclusivo e acolhedor.</li>
-            <li><strong>Prevenção ao bullying:</strong> Através da arte, mostramos como pequenas atitudes podem fazer a diferença no combate à violência e ao desrespeito.</li>
-            <li><strong>Engajamento:</strong> As apresentações são interativas, estimulando os jovens a se expressarem e participarem ativamente da discussão.</li>
-            <li><strong>Flexibilidade:</strong> Oferecemos esquetes curtos e peças completas, adaptáveis ao tempo e ao espaço disponível.</li>
-        </ul>
+                <h2>Por que levar o "Cena pela Diversidade" para sua escola ou ONG?</h2>
+                <ul>
+                    <li><strong>Conscientização:</strong> Nossas peças ajudam a desconstruir estereótipos e preconceitos, promovendo um ambiente mais inclusivo e acolhedor.</li>
+                    <li><strong>Prevenção ao bullying:</strong> Através da arte, mostramos como pequenas atitudes podem fazer a diferença no combate à violência e ao desrespeito.</li>
+                    <li><strong>Engajamento:</strong> As apresentações são interativas, estimulando os jovens a se expressarem e participarem ativamente da discussão.</li>
+                    <li><strong>Flexibilidade:</strong> Oferecemos esquetes curtos e peças completas, adaptáveis ao tempo e ao espaço disponível.</li>
+                </ul>
 
-        <h2>Como contratar?</h2>
-        <p>ONGs, escolas e instituições de ensino podem agendar apresentações para turmas de alunos, eventos culturais ou projetos pedagógicos. Nosso grupo está preparado para se deslocar até o local desejado, levando todo o material necessário para uma experiência teatral completa.</p>
+                <h2>Como contratar?</h2>
+                <p>ONGs, escolas e instituições de ensino podem agendar apresentações para turmas de alunos, eventos culturais ou projetos pedagógicos. Nosso grupo está preparado para se deslocar até o local desejado, levando todo o material necessário para uma experiência teatral completa.</p>
 
-        <p>Juntos, podemos transformar o ambiente escolar em um espaço de respeito, diversidade e aprendizado. <strong>Vamos usar o teatro para mudar histórias e construir um futuro mais inclusivo!</strong></p>
-		<p>Entre em contato conosco para agendar uma apresentação ou saber mais sobre nosso trabalho.<br>📩 <strong>Email:</strong> cenapeladiversidade@pridehub.com.br<br>📞 <strong>Telefone</strong>: (99) 99999-9999</p>
-		<p><strong>"Cena pela Diversidade" – Porque a arte transforma, e o respeito nos une. 🎭🌈</strong></p>
+                <p>Juntos, podemos transformar o ambiente escolar em um espaço de respeito, diversidade e aprendizado. <strong>Vamos usar o teatro para mudar histórias e construir um futuro mais inclusivo!</strong></p>
+                <p>Entre em contato conosco para agendar uma apresentação ou saber mais sobre nosso trabalho.<br>📩 <strong>Email:</strong> cenapeladiversidade@pridehub.com.br<br>📞 <strong>Telefone</strong>: (99) 99999-9999</p>
+                <p><strong>"Cena pela Diversidade" – Porque a arte transforma, e o respeito nos une. 🎭🌈</strong></p>
+            </div>
+            <!-- Schema.org para o grupo de teatro -->
+            <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "TheaterGroup",
+                "name": "Cena pela Diversidade",
+                "description": "Grupo de teatro que utiliza a arte para promover inclusão, respeito e combate ao bullying, com foco na comunidade LGBTQIA+.",
+                "url": "https://www.pridehub.com/grupo-teatro.html",
+                "image": "https://www.pridehub.com/img/grupo-teatro.jpg",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+55 (99) 99999-9999",
+                    "email": "cenapeladiversidade@pridehub.com.br",
+                    "contactType": "customer service"
+                },
+                "sameAs": [
+                    "https://www.facebook.com/cenapeladiversidade",
+                    "https://www.instagram.com/cenapeladiversidade"
+                ]
+            }
+            </script>
+        </article>
     </div>
 
     <!-- Footer -->

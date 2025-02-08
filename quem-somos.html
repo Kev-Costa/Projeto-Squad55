@@ -1,28 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" itemscope itemtype="http://schema.org/AboutPage">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quem Somos - PrideHub</title>
-	<link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
+    <meta itemprop="name" content="Quem Somos - PrideHub">
+    <meta itemprop="description" content="Conheça o PrideHub, um portal dedicado a promover saúde, educação, empoderamento e inclusão para a comunidade LGBTQIA+.">
+    <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
     <link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
     <link rel="manifest" href="img/site.webmanifest" />
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="quem-somos.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="quem-somos.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+	<!-- Schema.org para a organização PrideHub -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PrideHub",
+        "url": "https://www.pridehub.com",
+        "logo": "https://www.pridehub.com/img/logo.png",
+        "description": "PrideHub é um portal que integra serviços e recursos para a comunidade LGBTQIA+, com foco em saúde, educação e empoderamento para reduzir as desigualdades.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55 (99) 99999-9999",
+            "contactType": "customer service",
+            "email": "contato@pridehub.com",
+            "areaServed": "BR"
+        },
+        "sameAs": [
+            "https://www.facebook.com/pridehub",
+            "https://www.instagram.com/pridehub",
+            "https://www.twitter.com/pridehub"
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
-        <a href="index.html" class="navbar-brand">
+    <nav class="navbar" itemscope itemtype="http://schema.org/Organization">
+        <a href="index.html" class="navbar-brand" itemprop="url">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-rainbow" viewBox="0 0 16 16">
                 <path d="M8 4.5a7 7 0 0 0-7 7 0.5 0.5 0 0 1-1 0 8 8 0 1 1 16 0 0.5 0.5 0 0 1-1 0 7 7 0 0 0-7-7zm0 2a5 5 0 0 0-5 5 0.5 0.5 0 0 1-1 0 6 6 0 1 1 12 0 0.5 0.5 0 0 1-1 0 5 5 0 0 0-5-5zm0 2a3 3 0 0 0-3 3 0.5 0.5 0 0 1-1 0 4 4 0 1 1 8 0 0.5 0.5 0 0 1-1 0 3 3 0 0 0-3-3zm0 2a1 1 0 0 0-1 1 0.5 0.5 0 0 1-1 0 2 2 0 1 1 4 0 0.5 0.5 0 0 1-1 0 1 1 0 0 0-1-1z"/>
             </svg>
-            PRIDE HUB
+            <span itemprop="name">PRIDE HUB</span>
         </a>
         <div class="menu-toggle" onclick="toggleMenu()">
             <span></span>
@@ -71,55 +96,82 @@
                     <li><a href="#">Concurso LGBT</a></li>
                 </ul>
             </li>
-			<li><a` href="login.html" class="nav-link">Login</a></li>
+            <li><a href="login.html" class="nav-link">Login</a></li>
         </ul>
         <div class="search-bar">
             <input type="text" placeholder="Pesquisar...">
             <i data-feather="search" class="search-icon"></i> <!-- Ícone de lupa -->
         </div>
     </nav>
+
+    <!-- Conteúdo Principal -->
     <div class="conteudo">
-	    <img src="img/bem-vindo-ph.jpg" alt="Grupo Teatral Cena pela Diversidade">
-	    <header>
-        <h1>Bem-vindo ao PrideHub!</h2>
-		</header>
-        <p>O <strong>PrideHub</strong> é um portal dedicado a promover saúde, educação, empoderamento e inclusão para a comunidade LGBTQIA+. Nosso objetivo é criar um espaço seguro e acolhedor onde todos possam encontrar recursos, apoio e oportunidades para crescer e prosperar.</p>
-        
-		<h2>Você Sabia?</h2>
-		<p>A pesquisa do ambiente educacional revela que 73% dos jovens <strong>LGBTQIA+</strong> relatam ter sofrido bullying na escola devido à sua orientação sexual ou identidade de gênero? Estes adolescentes e adultos de 15 a 24 anos têm taxas mais altas de <strong>depressão, ansiedade e ideação suicida</strong> em comparação com seus pares heterossexuais, segundo a American Psychological Association (APA). O Disque 100 (Direitos Humanos) registra que a maioria das denúncias de violência contra LGBTQIA+ envolve jovens, especialmente pessoas trans.</p> 
-        <p>A ONU Mulheres enfatiza que mulheres lésbicas, bissexuais e trans enfrentam barreiras adicionais no acesso à saúde, incluindo violência e discriminação em serviços médicos.</p>        
-		<p>Nossa equipe pretende estender a mão firme para a comunidade que sofre com violência, discriminação e falta de oportunidades. Temos o propósito de oferecer serviços e recursos em um espaço digital acolhedor, para cuidar principalmente da saúde mental, da integridade e maior inclusão destas pessoas no ambiente social e profissional.</p>
-		
-		<h2>Como Jovens Podem se Beneficiar</h2>
-        <p>Se você é um jovem LGBTQIA+, o PrideHub oferece uma variedade de recursos para ajudar você a se sentir apoiado e capacitado:</p>
-        <ul>
-            <li><strong>Saúde e Bem-Estar:</strong> Acesso a profissionais de saúde LGBTQIA+ friendly, informações sobre saúde sexual e apoio psicológico online.</li>
-            <li><strong>Educação e Capacitação:</strong> Cursos, workshops e materiais educativos sobre diversidade, direitos e habilidades profissionais.</li>
-            <li><strong>Comunidade e Apoio:</strong> Fóruns e grupos de discussão para troca de experiências e construção de redes de apoio.</li>
-            <li><strong>Oportunidades Profissionais:</strong> Vagas de emprego inclusivas e programas de mentoria para ajudar você a entrar no mercado de trabalho.</li>
-        </ul>
+        <article itemscope itemtype="http://schema.org/AboutPage">
+            <img src="img/bem-vindo-ph.jpg" alt="Grupo Teatral Cena pela Diversidade" itemprop="image">
+            <header>
+                <h1 itemprop="headline">Bem-vindo ao PrideHub!</h1>
+            </header>
+            <p itemprop="description">O <strong>PrideHub</strong> é um portal dedicado a promover saúde, educação, empoderamento e inclusão para a comunidade LGBTQIA+. Nosso objetivo é criar um espaço seguro e acolhedor onde todos possam encontrar recursos, apoio e oportunidades para crescer e prosperar.</p>
+            
+            <h2>Você Sabia?</h2>
+            <p>A pesquisa do ambiente educacional revela que 73% dos jovens <strong>LGBTQIA+</strong> relatam ter sofrido bullying na escola devido à sua orientação sexual ou identidade de gênero? Estes adolescentes e adultos de 15 a 24 anos têm taxas mais altas de <strong>depressão, ansiedade e ideação suicida</strong> em comparação com seus pares heterossexuais, segundo a American Psychological Association (APA). O Disque 100 (Direitos Humanos) registra que a maioria das denúncias de violência contra LGBTQIA+ envolve jovens, especialmente pessoas trans.</p> 
+            <p>A ONU Mulheres enfatiza que mulheres lésbicas, bissexuais e trans enfrentam barreiras adicionais no acesso à saúde, incluindo violência e discriminação em serviços médicos.</p>        
+            <p>Nossa equipe pretende estender a mão firme para a comunidade que sofre com violência, discriminação e falta de oportunidades. Temos o propósito de oferecer serviços e recursos em um espaço digital acolhedor, para cuidar principalmente da saúde mental, da integridade e maior inclusão destas pessoas no ambiente social e profissional.</p>
+            
+            <h2>Como Jovens Podem se Beneficiar</h2>
+            <p>Se você é um jovem LGBTQIA+, o PrideHub oferece uma variedade de recursos para ajudar você a se sentir apoiado e capacitado:</p>
+            <ul>
+                <li><strong>Saúde e Bem-Estar:</strong> Acesso a profissionais de saúde LGBTQIA+ friendly, informações sobre saúde sexual e apoio psicológico online.</li>
+                <li><strong>Educação e Capacitação:</strong> Cursos, workshops e materiais educativos sobre diversidade, direitos e habilidades profissionais.</li>
+                <li><strong>Comunidade e Apoio:</strong> Fóruns e grupos de discussão para troca de experiências e construção de redes de apoio.</li>
+                <li><strong>Oportunidades Profissionais:</strong> Vagas de emprego inclusivas e programas de mentoria para ajudar você a entrar no mercado de trabalho.</li>
+            </ul>
 
-        <h2>Como Escolas, ONGs e Empresas Podem Contribuir</h2>
-        <p>Escolas, ONGs e empresas têm um papel fundamental na promoção da inclusão e da diversidade. Aqui estão algumas maneiras de contribuir com o PrideHub:</p>
-        <ul>
-            <li><strong>Escolas:</strong> Parcerias para promover palestras, workshops e programas de conscientização sobre diversidade e inclusão.</li>
-            <li><strong>ONGs:</strong> Colaborações em projetos e iniciativas que apoiam a comunidade LGBTQIA+, além de compartilhamento de recursos e expertise.</li>
-            <li><strong>Empresas:</strong> Anúncio de vagas inclusivas, patrocínio de cursos e workshops, e participação em campanhas de conscientização.</li>
-        </ul>
+            <h2>Como Escolas, ONGs e Empresas Podem Contribuir</h2>
+            <p>Escolas, ONGs e empresas têm um papel fundamental na promoção da inclusão e da diversidade. Aqui estão algumas maneiras de contribuir com o PrideHub:</p>
+            <ul>
+                <li><strong>Escolas:</strong> Parcerias para promover palestras, workshops e programas de conscientização sobre diversidade e inclusão.</li>
+                <li><strong>ONGs:</strong> Colaborações em projetos e iniciativas que apoiam a comunidade LGBTQIA+, além de compartilhamento de recursos e expertise.</li>
+                <li><strong>Empresas:</strong> Anúncio de vagas inclusivas, patrocínio de cursos e workshops, e participação em campanhas de conscientização.</li>
+            </ul>
 
-        <h2>Nossa Missão</h2>
-        <p>Nossa missão é reduzir as desigualdades, promover a igualdade de gênero e garantir que todos tenham acesso a saúde, educação e oportunidades de trabalho decente. Acreditamos que, juntos, podemos construir uma sociedade mais justa e inclusiva.</p>
+            <h2>Nossa Missão</h2>
+            <p>Nossa missão é reduzir as desigualdades, promover a igualdade de gênero e garantir que todos tenham acesso a saúde, educação e oportunidades de trabalho decente. Acreditamos que, juntos, podemos construir uma sociedade mais justa e inclusiva.</p>
 
-        <h2>Junte-se a Nós</h2>
-        <p>Seja você um jovem em busca de apoio, uma escola interessada em promover a inclusão, uma ONG dedicada à causa ou uma empresa comprometida com a diversidade, o PrideHub é o lugar para você. Vamos trabalhar juntos para criar um futuro melhor para todos.</p>
+            <h2>Junte-se a Nós</h2>
+            <p>Seja você um jovem em busca de apoio, uma escola interessada em promover a inclusão, uma ONG dedicada à causa ou uma empresa comprometida com a diversidade, o PrideHub é o lugar para você. Vamos trabalhar juntos para criar um futuro melhor para todos.</p>
+            <!-- Schema.org para pagina quem-somos -->
+            <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "NGO",
+                "name": "Pride HUB",
+                "description": "Portal que promove inclusão com foco na comunidade LGBTQIA+.",
+                "url": "https://www.pridehub.com/quem-somos",
+                "image": "https://www.pridehub.com/img/quem-somos.jpg",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+55 (99) 99999-9999",
+                    "email": "cenapeladiversidade@pridehub.com.br",
+                    "contactType": "customer service"
+                },
+                "sameAs": [
+                    "https://www.facebook.com/pridehub",
+                    "https://www.instagram.com/pridehub"
+                ]
+            }
+            </script>
+		</article>
     </div>
+
     <!-- Footer -->
-    <footer>
-        <a href="/quem-somos">Quem Somos</a>
-        <a href="#">Fale Conosco</a>
-        <a href="#">Política de Privacidade</a>
-        <p style="margin-top:20px;">© 2025 PrideHub. Todos os direitos reservados.</p>
+    <footer itemscope itemtype="http://schema.org/Organization">
+        <a href="/quem-somos" itemprop="url">Quem Somos</a>
+        <a href="#" itemprop="url">Fale Conosco</a>
+        <a href="#" itemprop="url">Política de Privacidade</a>
+        <p style="margin-top:20px;">© 2025 <span itemprop="name">PrideHub</span>. Todos os direitos reservados.</p>
     </footer>
+
     <!-- Script para carregar ícones e ativar menu mobile -->
     <script>
         feather.replace();

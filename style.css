@@ -1,6 +1,6 @@
         /* Reset CSS */
         * {
-            margin: 0;
+            margin: 0 auto;
             padding: 0;
             box-sizing: border-box;
         }
@@ -290,6 +290,7 @@
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
+			width:60%;
         }
 
         .testimonial-card img {

@@ -11,18 +11,40 @@
     <link rel="manifest" href="img/site.webmanifest" />
 	<link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
     <script src="https://unpkg.com/feather-icons"></script>
+	<!-- Schema.org para a organização PrideHub -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PrideHub",
+        "url": "https://www.pridehub.com",
+        "logo": "https://www.pridehub.com/img/logo.png",
+        "description": "PrideHub é um portal que integra serviços e recursos para a comunidade LGBTQIA+, com foco em saúde, educação e empoderamento para reduzir as desigualdades.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55 (99) 99999-9999",
+            "contactType": "customer service",
+            "email": "contato@pridehub.com",
+            "areaServed": "BR"
+        },
+        "sameAs": [
+            "https://www.facebook.com/pridehub",
+            "https://www.instagram.com/pridehub",
+            "https://www.twitter.com/pridehub"
+        ]
+    }
+    </script>
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar">
-        <a href="index.html" class="navbar-brand">
+    <nav class="navbar" itemscope itemtype="http://schema.org/Organization">
+        <a href="index.html" class="navbar-brand" itemprop="url">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-rainbow" viewBox="0 0 16 16">
                 <path d="M8 4.5a7 7 0 0 0-7 7 0.5 0.5 0 0 1-1 0 8 8 0 1 1 16 0 0.5 0.5 0 0 1-1 0 7 7 0 0 0-7-7zm0 2a5 5 0 0 0-5 5 0.5 0.5 0 0 1-1 0 6 6 0 1 1 12 0 0.5 0.5 0 0 1-1 0 5 5 0 0 0-5-5zm0 2a3 3 0 0 0-3 3 0.5 0.5 0 0 1-1 0 4 4 0 1 1 8 0 0.5 0.5 0 0 1-1 0 3 3 0 0 0-3-3zm0 2a1 1 0 0 0-1 1 0.5 0.5 0 0 1-1 0 2 2 0 1 1 4 0 0.5 0.5 0 0 1-1 0 1 1 0 0 0-1-1z"/>
             </svg>
-            PRIDE HUB
+            <span itemprop="name">PRIDE HUB</span>
         </a>
         <div class="menu-toggle" onclick="toggleMenu()">
             <span></span>
@@ -80,16 +102,16 @@
     </nav>
 
     <!-- Top Section -->
-    <section class="top">
-        <h1>Você está no Pride HUB, um portal que integra serviços e recursos para a comunidade LGBTQIA+, com foco em saúde, educação e empoderamento para reduzirmos as desigualdades</h1>
+    <section class="top" itemscope itemtype="http://schema.org/WebPage">
+        <h1 itemprop="headline">Você está no Pride HUB, um portal que integra serviços e recursos para a comunidade LGBTQIA+, com foco em saúde, educação e empoderamento para reduzirmos as desigualdades</h1>
     </section>
 
     <!-- Formulário de Cadastro -->
-    <section class="newsletter">
-        <h2>Receba tudo o que você precisa para ficar atualizado sobre nosso conteúdo</h2>
-        <form>
-            <input type="email" placeholder="Cadastre seu email" required>
-            <button type="submit">Receber</button>
+    <section class="newsletter" itemscope itemtype="http://schema.org/Service">
+        <h2 itemprop="name">Receba tudo o que você precisa para ficar atualizado sobre nosso conteúdo</h2>
+        <form itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+            <input type="email" placeholder="Cadastre seu email" required itemprop="query-input">
+            <button type="submit" itemprop="target">Receber</button>
         </form>
     </section>
 
@@ -97,17 +119,17 @@
     <section class="articles">
         <h2>Artigos e Notícias</h2>
         <div class="article-list">
-            <div class="article-item">
-                <h3>Artigo 1</h3>
-                <p>Descrição breve do artigo.</p>
+            <div class="article-item" itemscope itemtype="http://schema.org/Article">
+                <h3 itemprop="headline">Artigo 1</h3>
+                <p itemprop="description">Descrição breve do artigo.</p>
             </div>
-            <div class="article-item">
-                <h3>Artigo 2</h3>
-                <p>Descrição breve do artigo.</p>
+            <div class="article-item" itemscope itemtype="http://schema.org/Article">
+                <h3 itemprop="headline">Artigo 2</h3>
+                <p itemprop="description">Descrição breve do artigo.</p>
             </div>
-            <div class="article-item">
-                <h3>Artigo 3</h3>
-                <p>Descrição breve do artigo.</p>
+            <div class="article-item" itemscope itemtype="http://schema.org/Article">
+                <h3 itemprop="headline">Artigo 3</h3>
+                <p itemprop="description">Descrição breve do artigo.</p>
             </div>
         </div>
     </section>
@@ -116,11 +138,11 @@
     <section class="recursos">
         <h2>Recursos Úteis</h2>
         <div class="recurso-list">
-            <div class="recurso-item">
-                <a href="#">Suporte a Saúde Mental</a>
+            <div class="recurso-item" itemscope itemtype="http://schema.org/Service">
+                <a href="#" itemprop="name">Suporte a Saúde Mental</a>
             </div>
-            <div class="recurso-item">
-                <a href="#">Literatura Queer</a>
+            <div class="recurso-item" itemscope itemtype="http://schema.org/Service">
+                <a href="#" itemprop="name">Literatura Queer</a>
             </div>
         </div>
     </section>
@@ -128,12 +150,13 @@
     <!-- Seção de Histórias da Comunidade -->
     <section class="testimonials">
         <h2>Histórias da Comunidade</h2>
-        <div class="testimonial-card">
-            <img src="img/joao.jpg" alt="João Silva">
+        <div class="testimonial-card" itemscope itemtype="http://schema.org/Review">
+            <img src="img/joao80x80.jpg" alt="João Silva" itemprop="image">
             <div class="testimonial-content">
-                <h3>João Silva</h3>
-                <p>"O PrideHub mudou a minha vida! Encontrei apoio psicológico e uma rede de pessoas incríveis que me ajudaram a superar momentos difíceis."</p>
-                <div class="rating">
+                <h3 itemprop="author">João Silva</h3>
+                <p itemprop="reviewBody">"O PrideHub mudou a minha vida! Encontrei apoio psicológico e uma rede de pessoas incríveis que me ajudaram a superar momentos difíceis."</p>
+                <div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="ratingValue" content="5">
                     <i data-feather="star" fill="gold"></i>
                     <i data-feather="star" fill="gold"></i>
                     <i data-feather="star" fill="gold"></i>
@@ -142,13 +165,14 @@
                 </div>
             </div>
         </div>
-        <div class="testimonial-card">
-            <img src="img/maria.jpg" alt="Maria Souza">
+        <div class="testimonial-card" itemscope itemtype="http://schema.org/Review">
+            <img src="img/maria80x80.jpg" alt="Maria Souza" itemprop="image">
             <div class="testimonial-content">
-                <h3>Maria Souza</h3>
-                <p>"Graças ao PrideHub, consegui um emprego inclusivo e apoio para me capacitar profissionalmente. Recomendo a todos!"</p>
-                <div class="rating">
-                    <i data-feather="star" fill="gold"></i>
+                <h3 itemprop="author">Maria Souza</h3>
+                <p itemprop="reviewBody">"Graças ao PrideHub, consegui um emprego inclusivo e apoio para me capacitar profissionalmente. Recomendo a todos!"</p>
+                <div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="ratingValue" content="5">
+					<i data-feather="star" fill="gold"></i>
                     <i data-feather="star" fill="gold"></i>
                     <i data-feather="star" fill="gold"></i>
                     <i data-feather="star" fill="gold"></i>
@@ -156,12 +180,13 @@
                 </div>
             </div>
         </div>
-        <div class="testimonial-card">
-            <img src="img/bia.jpg" alt="Maria Souza">
+        <div class="testimonial-card" itemscope itemtype="http://schema.org/Review">
+            <img src="img/bia80x80.jpg" alt="Beatriz Lima" itemprop="image">
             <div class="testimonial-content">
-                <h3>Beatriz Lima</h3>
-                <p>"Com o suporte do PrideHub, encontrei um ambiente inclusivo, recebi orientação profissional e apoio para meu desenvolvimento. Recomendo a todos! "</p>
-                <div class="rating">
+                <h3 itemprop="author">Beatriz Lima</h3>
+                <p itemprop="reviewBody">"Com o suporte do PrideHub, encontrei um ambiente inclusivo, recebi orientação profissional e apoio para meu desenvolvimento. Recomendo a todos!"</p>
+                <div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="ratingValue" content="5">
                     <i data-feather="star" fill="gold"></i>
                     <i data-feather="star" fill="gold"></i>
                     <i data-feather="star" fill="gold"></i>
@@ -173,13 +198,33 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <a href="/quem-somos">Quem Somos</a>
-        <a href="#">Fale Conosco</a>
-        <a href="#">Política de Privacidade</a>
-        <p style="margin-top:20px;">© 2025 PrideHub. Todos os direitos reservados.</p>
+	    <footer itemscope itemtype="http://schema.org/Organization">
+        <a href="/quem-somos" itemprop="url">Quem Somos</a>
+        <a href="#" itemprop="url">Fale Conosco</a>
+        <a href="#" itemprop="url">Política de Privacidade</a>
+        <p style="margin-top:20px;">© 2025 <span itemprop="name">PrideHub</span>. Todos os direitos reservados.</p>
     </footer>
-
+    <!-- Schema.org para o portal - Home -->
+     <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "serviceType": "Portal LGBTQIA+ com multiplos serviços e recursos de saude e inclusão",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "PrideHub",
+                    "url": "https://www.pridehub.com"
+                },
+                "description": "Portal que integra serviços e recursos para a comunidade LGBTQIA+, com foco em saúde, educação e empoderamento.",
+                "areaServed": "BR",
+                "availableChannel": {
+                    "@type": "ServiceChannel",
+                    "serviceUrl": "https://www.pridehub.com/apoio-psico.html",
+                    "servicePhone": "+55 (99) 99999-9999",
+                    "serviceEmail": "contato@pridehub.com"
+                }
+            }
+    </script>
     <!-- Script para carregar ícones e ativar menu mobile -->
     <script>
         feather.replace();
