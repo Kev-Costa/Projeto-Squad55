@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR" itemscope itemtype="http://schema.org/AboutPage">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos - PrideHub</title>
+	<link rel="icon" type="image/png" href="/asstes/img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/img/site.webmanifest" />
+	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="/assets/styles/quem-somos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+	<!-- Schema.org para a organização PrideHub -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PrideHub",
+        "url": "https://www.pridehub.com",
+        "logo": "https://www.pridehub.com/img/logo.png",
+        "description": "PrideHub é um portal que integra serviços e recursos para a comunidade LGBTQIA+, com foco em saúde, educação e empoderamento para reduzir as desigualdades.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55 (99) 99999-9999",
+            "contactType": "customer service",
+            "email": "contato@pridehub.com",
+            "areaServed": "BR"
+        },
+        "sameAs": [
+            "https://www.facebook.com/pridehub",
+            "https://www.instagram.com/pridehub",
+            "https://www.twitter.com/pridehub"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" itemscope itemtype="http://schema.org/Organization">
+        <a href="index.html" class="navbar-brand" itemprop="url">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-rainbow" viewBox="0 0 16 16">
+                <path d="M8 4.5a7 7 0 0 0-7 7 0.5 0.5 0 0 1-1 0 8 8 0 1 1 16 0 0.5 0.5 0 0 1-1 0 7 7 0 0 0-7-7zm0 2a5 5 0 0 0-5 5 0.5 0.5 0 0 1-1 0 6 6 0 1 1 12 0 0.5 0.5 0 0 1-1 0 5 5 0 0 0-5-5zm0 2a3 3 0 0 0-3 3 0.5 0.5 0 0 1-1 0 4 4 0 1 1 8 0 0.5 0.5 0 0 1-1 0 3 3 0 0 0-3-3zm0 2a1 1 0 0 0-1 1 0.5 0.5 0 0 1-1 0 2 2 0 1 1 4 0 0.5 0.5 0 0 1-1 0 1 1 0 0 0-1-1z"/>
+            </svg>
+            <span itemprop="name">PRIDE HUB</span>
+        </a>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Bem-estar & Saúde</a>
+                <ul class="dropdown-menu">
+                    <li><a href="mapa-saude.html">Mapa da Saúde Inclusiva</a></li>
+                    <li><a href="apoio-psico.html">Apoio Psicológico Online</a></li>
+                    <li><a href="#">Saúde Sexual</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Educação</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Cursos e Workshops</a></li>
+                    <li><a href="#">Palestras</a></li>
+                    <li><a href="#">Literatura</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Igualdade</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Redes de Apoio</a></li>
+                    <li><a href="#">Campanhas de Empoderamento</a></li>
+                    <li><a href="#">Orientação sobre Direitos</a></li>
+                    <li><a href="#">Pride nas Escolas</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Emprego</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Vagas Inclusivas</a></li>
+                    <li><a href="#">Mentoria Profissional</a></li>
+                    <li><a href="#">Capacitação e Cursos</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Iniciativas</a>
+                <ul class="dropdown-menu">
+                    <li><a href="grupo-teatro.html">Grupo Teatral</a></li>
+                    <li><a href="Orientação_a_docentes.html">Orientação a Docentes</a></li>
+                    <li><a href="#">Concurso LGBT</a></li>
+                </ul>
+            </li>
+            <li><a href="login.html" class="nav-link">Login</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <i data-feather="search" class="search-icon"></i> <!-- Ícone de lupa -->
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="conteudo">
+	    <img src="/assets/img/bem-vindo-ph.jpg" alt="Grupo Teatral Cena pela Diversidade">
+	    <header>
+        <h1>Bem-vindo ao PrideHub!</h2>
+		</header>
+        <p>O <strong>PrideHub</strong> é um portal dedicado a promover saúde, educação, empoderamento e inclusão para a comunidade LGBTQIA+. Nosso objetivo é criar um espaço seguro e acolhedor onde todos possam encontrar recursos, apoio e oportunidades para crescer e prosperar.</p>
+
+            <h2>Como Escolas, ONGs e Empresas Podem Contribuir</h2>
+            <p>Escolas, ONGs e empresas têm um papel fundamental na promoção da inclusão e da diversidade. Aqui estão algumas maneiras de contribuir com o PrideHub:</p>
+            <ul>
+                <li><strong>Escolas:</strong> Parcerias para promover palestras, workshops e programas de conscientização sobre diversidade e inclusão.</li>
+                <li><strong>ONGs:</strong> Colaborações em projetos e iniciativas que apoiam a comunidade LGBTQIA+, além de compartilhamento de recursos e expertise.</li>
+                <li><strong>Empresas:</strong> Anúncio de vagas inclusivas, patrocínio de cursos e workshops, e participação em campanhas de conscientização.</li>
+            </ul>
+
+            <h2>Nossa Missão</h2>
+            <p>Nossa missão é reduzir as desigualdades, promover a igualdade de gênero e garantir que todos tenham acesso a saúde, educação e oportunidades de trabalho decente. Acreditamos que, juntos, podemos construir uma sociedade mais justa e inclusiva.</p>
+
+            <h2>Junte-se a Nós</h2>
+            <p>Seja você um jovem em busca de apoio, uma escola interessada em promover a inclusão, uma ONG dedicada à causa ou uma empresa comprometida com a diversidade, o PrideHub é o lugar para você. Vamos trabalhar juntos para criar um futuro melhor para todos.</p>
+            <!-- Schema.org para pagina quem-somos -->
+            <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "NGO",
+                "name": "Pride HUB",
+                "description": "Portal que promove inclusão com foco na comunidade LGBTQIA+.",
+                "url": "https://www.pridehub.com/quem-somos",
+                "image": "https://www.pridehub.com/img/quem-somos.jpg",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+55 (99) 99999-9999",
+                    "email": "cenapeladiversidade@pridehub.com.br",
+                    "contactType": "customer service"
+                },
+                "sameAs": [
+                    "https://www.facebook.com/pridehub",
+                    "https://www.instagram.com/pridehub"
+                ]
+            }
+            </script>
+		</article>
+    </div>
+
+    <!-- Footer -->
+    <footer itemscope itemtype="http://schema.org/Organization">
+        <a href="/quem-somos" itemprop="url">Quem Somos</a>
+        <a href="#" itemprop="url">Fale Conosco</a>
+        <a href="#" itemprop="url">Política de Privacidade</a>
+        <p style="margin-top:20px;">© 2025 <span itemprop="name">PrideHub</span>. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script para carregar ícones e ativar menu mobile -->
+    <script>
+        feather.replace();
+
+        function toggleMenu() {
+            const navbarNav = document.querySelector('.navbar-nav');
+            navbarNav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

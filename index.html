@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrideHub - Seu lugar inclusivo e acolhedor</title>
+	<link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="img/site.webmanifest" />
+	<link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-rainbow" viewBox="0 0 16 16">
+                <path d="M8 4.5a7 7 0 0 0-7 7 0.5 0.5 0 0 1-1 0 8 8 0 1 1 16 0 0.5 0.5 0 0 1-1 0 7 7 0 0 0-7-7zm0 2a5 5 0 0 0-5 5 0.5 0.5 0 0 1-1 0 6 6 0 1 1 12 0 0.5 0.5 0 0 1-1 0 5 5 0 0 0-5-5zm0 2a3 3 0 0 0-3 3 0.5 0.5 0 0 1-1 0 4 4 0 1 1 8 0 0.5 0.5 0 0 1-1 0 3 3 0 0 0-3-3zm0 2a1 1 0 0 0-1 1 0.5 0.5 0 0 1-1 0 2 2 0 1 1 4 0 0.5 0.5 0 0 1-1 0 1 1 0 0 0-1-1z"/>
+            </svg>
+            PRIDE HUB
+        </a>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Bem-estar & Saúde</a>
+                <ul class="dropdown-menu">
+                    <li><a href="mapa-saude.html">Mapa da Saúde Inclusiva</a></li>
+                    <li><a href="apoio-psico.html">Apoio Psicológico Online</a></li>
+                    <li><a href="#">Saúde Sexual</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Educação</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Cursos e Workshops</a></li>
+                    <li><a href="#">Palestras</a></li>
+                    <li><a href="#">Literatura</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Igualdade</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Redes de Apoio</a></li>
+                    <li><a href="#">Campanhas de Empoderamento</a></li>
+                    <li><a href="#">Orientação sobre Direitos</a></li>
+                    <li><a href="#">Pride nas Escolas</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Emprego</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Vagas Inclusivas</a></li>
+                    <li><a href="#">Mentoria Profissional</a></li>
+                    <li><a href="#">Capacitação e Cursos</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Iniciativas</a>
+                <ul class="dropdown-menu">
+                    <li><a href="grupo-teatro.html">Grupo Teatral</a></li>
+                    <li><a href="#">Orientação a Docentes</a></li>
+                    <li><a href="#">Concurso LGBT</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <i data-feather="search" class="search-icon"></i> 
+        </div>
+    </nav>
+
+    <!-- Top Section -->
+    <section class="top">
+        <h1>Você está no Pride HUB, um portal que integra serviços e recursos para a comunidade LGBTQIA+, com foco em saúde, educação e empoderamento para reduzirmos as desigualdades</h1>
+    </section>
+
+    <!-- Formulário de Cadastro -->
+    <section class="newsletter">
+        <h2>Receba tudo o que você precisa para ficar atualizado sobre nosso conteúdo</h2>
+        <form>
+            <input type="email" placeholder="Cadastre seu email" required>
+            <button type="submit">Receber</button>
+        </form>
+    </section>
+
+    <!-- Seção de Artigos -->
+    <section class="articles">
+        <h2>Artigos e Notícias</h2>
+        <div class="article-list">
+            <div class="article-item">
+                <h3>Artigo 1</h3>
+                <p>Descrição breve do artigo.</p>
+            </div>
+            <div class="article-item">
+                <h3>Artigo 2</h3>
+                <p>Descrição breve do artigo.</p>
+            </div>
+            <div class="article-item">
+                <h3>Artigo 3</h3>
+                <p>Descrição breve do artigo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Recursos Úteis -->
+    <section class="recursos">
+        <h2>Recursos Úteis</h2>
+        <div class="recurso-list">
+            <div class="recurso-item">
+                <a href="#">Suporte a Saúde Mental</a>
+            </div>
+            <div class="recurso-item">
+                <a href="#">Literatura Queer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Histórias da Comunidade -->
+    <section class="testimonials">
+        <h2>Histórias da Comunidade</h2>
+        <div class="testimonial-card">
+            <img src="/assets/img/joao.jpg" alt="João Silva">
+            <div class="testimonial-content">
+                <h3>João Silva</h3>
+                <p>"O PrideHub mudou a minha vida! Encontrei apoio psicológico e uma rede de pessoas incríveis que me ajudaram a superar momentos difíceis."</p>
+                <div class="rating">
+                    <i data-feather="star" fill="gold"></i>
+                    <i data-feather="star" fill="gold"></i>
+                    <i data-feather="star" fill="gold"></i>
+                    <i data-feather="star" fill="gold"></i>
+                    <i data-feather="star" fill="gold"></i>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <img src="/assets/img/maria.jpg" alt="Maria Souza">
+            <div class="testimonial-content">
+                <h3>Maria Souza</h3>
+                <p>"Graças ao PrideHub, consegui um emprego inclusivo e apoio para me capacitar profissionalmente. Recomendo a todos!"</p>
+                <div class="rating">
+                    <i data-feather="star" fill="gold"></i>
+                    <i data-feather="star" fill="gold"></i>
+                    <i data-feather="star" fill="gold"></i>
+                    <i data-feather="star" fill="gold"></i>
+                    <i data-feather="star" fill="gold"></i>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <img src="/assets/img/maria.jpg" alt="Maria Souza">
+            <div class="testimonial-content">
+                <h3>Beatriz Lima</h3>
+                <p>"Com o suporte do PrideHub, encontrei um ambiente inclusivo, recebi orientação profissional e apoio para meu desenvolvimento. Recomendo a todos! "</p>
+                <div class="rating">
+                    <i data-feather="star" fill="gold"></i>
+                    <i data-feather="star" fill="gold"></i>
+                    <i data-feather="star" fill="gold"></i>
+                    <i data-feather="star" fill="gold"></i>
+                    <i data-feather="star" fill="gold"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="/quem-somos">Quem Somos</a>
+        <a href="#">Fale Conosco</a>
+        <a href="#">Política de Privacidade</a>
+        <p style="margin-top:20px;">© 2025 PrideHub. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script para carregar ícones e ativar menu mobile -->
+    <script>
+        feather.replace();
+
+        function toggleMenu() {
+            const navbarNav = document.querySelector('.navbar-nav');
+            navbarNav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
