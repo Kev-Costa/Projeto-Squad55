@@ -1,0 +1,22 @@
+Resposta 1: 
+A falta de acesso a informações confiáveis, falta de suporte emocional e social, incluindo a ausência de redes de apoio e acolhimento, além das barreiras no mercado de trablho com pouca visibilidade para vagas inclusivas e empresas comprometidas com a diversidade são problemas enfrentados pelo público alvo. O site busca resolver essa falta de um espaço digital e acessível
+
+Resposta 2: Jovens que fazem parte da comunidade LGBTQIAPN+ em busca de apoio, escolas interessadas na promoção da inclusão, ONGs dedicadas à causa ou empresas comprometidas com a diversidade. Sim, pode ser aplicada a todas as faixas de idade ou grau de escolaridade
+
+Resposta 3. O problema foi escolhido com base em quais dados oficiais? Como vocês identificaram que esse realmente é um problema para o público-alvo? Indique as referências usadas, justificando a sua escolha.
+Consultamos dados de pesquisas como  a Pesquisa do Ambiente Educacional de 2016; Estudo da American Psychological Association (APA); Tambem vimos dados da ONU Mulheres. Outra fonte que utilizamos foi Associação Nacional de Travestis e Transexuais (ANTRA) e Pesquisa Nacional de Saúde LGBTQIA+ de 2020
+
+ Resposta 4. Alguns dos impactos que a problemática escolhida afetam nosso público alvo:
+
+Falta de Oportunidade: Quando indivíduos, especialmente de grupos marginalizados como a comunidade LGBTQIA+, não têm acesso a oportunidades, seja no campo profissional, educacional ou social, eles enfrentam maiores dificuldades para alcançar seus objetivos e sonhos. Isso gera um ciclo de desigualdade, onde a falta de oportunidades pode levar à pobreza, à marginalização e a uma vida de invisibilidade e frustração. Para muitos, isso pode resultar em uma sensação de impotência ou desespero.
+Bullying e Estigma Social: O bullying, especialmente em ambientes escolares ou familiares, pode deixar cicatrizes emocionais profundas. Para a comunidade LGBTQIA+, o bullying geralmente está associado a ataques relacionados à identidade de gênero ou orientação sexual. Isso pode resultar em baixa autoestima, depressão, ansiedade, transtornos psicológicos e, em casos extremos, suicídio. A violência verbal e física também pode ser uma constante, dificultando a socialização e a confiança no próprio potencial.
+Resposta 5. Qual o cronograma das atividades?  
+https://github.com/users/Heldermourademouaes/projects/2/views/1
+6. Como será feita a distribuição das atividades entre os integrantes do squad para essa primeira entrega?  
+ 
+Criamos um grupo de whatsapp por volta do mês de dezembro para nos conectar e nos conhecermos como time. Apenas um integrante do squad não respondeu aos chamados. No mês de janeiro realizamos reuniões na sala de conversa do teams. Os pais do nosso colega Helder contribuíram com o grupo para orientar a realizar pesquisas e indicaram métodos para fazer a descoberta sobre o público alvo. Depois de receber as instruções definitivas da monitoria sobre o tema e as ODS coletamos estudos e pesquisas e também tivemos conversas informais com pessoas próximas e amigos para confirmar impressões sobre o problema. Dessa forma podemos definir as seções do do nosso site que seriam mais relevantes para oferecer os conteúdos e serviços propostos. Nosso grupo utilizou o espaço de grupos no app Teams para compartilhar documentos e enviar avisos. Para metodologia ágil usamos a ferramenta projects do github onde guardamos cartões de tarefas a serem realizadas e assinamos seus responsáveis por executá-las.
+
+
+
+Resposta 7: Foi utilizado o GitHub e a plataforma Teams. 
+
