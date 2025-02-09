@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" itemscope itemtype="http://schema.org/WebPage">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+	    <!-- Schema.org para a organização PrideHub -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PrideHub",
+        "url": "https://www.pridehub.com",
+        "logo": "https://www.pridehub.com/img/logo.png",
+        "description": "PrideHub é um portal que integra serviços e recursos para a comunidade LGBTQIA+, com foco em saúde, educação e empoderamento para reduzir as desigualdades.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55 (99) 99999-9999",
+            "contactType": "customer service",
+            "email": "contato@pridehub.com",
+            "areaServed": "BR"
+        },
+        "sameAs": [
+            "https://www.facebook.com/pridehub",
+            "https://www.instagram.com/pridehub",
+            "https://www.twitter.com/pridehub"
+        ]
+    }
+    </script>
 </head>
 <body>
 
@@ -23,7 +46,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-rainbow" viewBox="0 0 16 16">
                 <path d="M8 4.5a7 7 0 0 0-7 7 0.5 0.5 0 0 1-1 0 8 8 0 1 1 16 0 0.5 0.5 0 0 1-1 0 7 7 0 0 0-7-7zm0 2a5 5 0 0 0-5 5 0.5 0.5 0 0 1-1 0 6 6 0 1 1 12 0 0.5 0.5 0 0 1-1 0 5 5 0 0 0-5-5zm0 2a3 3 0 0 0-3 3 0.5 0.5 0 0 1-1 0 4 4 0 1 1 8 0 0.5 0.5 0 0 1-1 0 3 3 0 0 0-3-3zm0 2a1 1 0 0 0-1 1 0.5 0.5 0 0 1-1 0 2 2 0 1 1 4 0 0.5 0.5 0 0 1-1 0 1 1 0 0 0-1-1z"/>
             </svg>
-            PRIDE HUB
+            <span itemprop="name">PRIDE HUB</span>
         </a>
         <div class="menu-toggle" onclick="toggleMenu()">
             <span></span>
@@ -72,6 +95,7 @@
                     <li><a href="#">Concurso LGBT</a></li>
                 </ul>
             </li>
+            <li><a href="login.html" class="nav-link">Login</a></li>
         </ul>
         <div class="search-bar">
             <input type="text" placeholder="Pesquisar...">
@@ -85,39 +109,62 @@
         <h1>Mapa de Saúde Inclusiva</h1>
         <p>O <strong>Mapa de Saúde Inclusiva</strong> é um diretório de profissionais de saúde e clínicas que são <strong>LGBTQIA+ friendly</strong>, ou seja, espaços e profissionais que oferecem um atendimento acolhedor, respeitoso e livre de preconceitos. Nosso objetivo é conectar a comunidade LGBTQIA+ a serviços de saúde de qualidade, onde todos possam se sentir seguros e compreendidos.</p>
 
-        <h2>O que você encontra no Mapa de Saúde Inclusiva?</h2>
-        <ul>
-            <li><strong>Profissionais de saúde:</strong> Médicos, psicólogos, terapeutas e outros especialistas que atendem com respeito às diversidades de gênero e orientação sexual.</li>
-            <li><strong>Clínicas e hospitais:</strong> Estabelecimentos de saúde que possuem políticas de inclusão e treinamento para lidar com as necessidades da comunidade LGBTQIA+.</li>
-            <li><strong>Avaliações e recomendações:</strong> Confira as avaliações de outros usuários e compartilhe sua experiência para ajudar mais pessoas a encontrarem os melhores serviços.</li>
-        </ul>
+            <h2>O que você encontra no Mapa de Saúde Inclusiva?</h2>
+            <ul>
+                <li><strong>Profissionais de saúde:</strong> Médicos, psicólogos, terapeutas e outros especialistas que atendem com respeito às diversidades de gênero e orientação sexual.</li>
+                <li><strong>Clínicas e hospitais:</strong> Estabelecimentos de saúde que possuem políticas de inclusão e treinamento para lidar com as necessidades da comunidade LGBTQIA+.</li>
+                <li><strong>Avaliações e recomendações:</strong> Confira as avaliações de outros usuários e compartilhe sua experiência para ajudar mais pessoas a encontrarem os melhores serviços.</li>
+            </ul>
 
-        <h2>Por que o Mapa de Saúde Inclusiva é importante?</h2>
-        <p>Muitas pessoas LGBTQIA+ enfrentam dificuldades para encontrar profissionais de saúde que entendam suas necessidades específicas e ofereçam um atendimento livre de discriminação. O <strong>Mapa de Saúde Inclusiva</strong> foi criado para:</p>
-        <ul>
-            <li>Facilitar o acesso a serviços de saúde de qualidade.</li>
-            <li>Promover a inclusão e o respeito no atendimento médico.</li>
-            <li>Reduzir as barreiras enfrentadas pela comunidade LGBTQIA+ na busca por cuidados de saúde.</li>
-        </ul>
+            <h2>Por que o Mapa de Saúde Inclusiva é importante?</h2>
+            <p>Muitas pessoas LGBTQIA+ enfrentam dificuldades para encontrar profissionais de saúde que entendam suas necessidades específicas e ofereçam um atendimento livre de discriminação. O <strong>Mapa de Saúde Inclusiva</strong> foi criado para:</p>
+            <ul>
+                <li>Facilitar o acesso a serviços de saúde de qualidade.</li>
+                <li>Promover a inclusão e o respeito no atendimento médico.</li>
+                <li>Reduzir as barreiras enfrentadas pela comunidade LGBTQIA+ na busca por cuidados de saúde.</li>
+            </ul>
 
-        <h2>Como usar o Mapa de Saúde Inclusiva?</h2>
-        <p>Navegue pelo nosso diretório e encontre profissionais e clínicas próximos a você. Leia as avaliações da comunidade e escolha o serviço que melhor atenda às suas necessidades. Se você já utilizou algum dos serviços listados, não se esqueça de deixar sua avaliação para ajudar outras pessoas!</p>
+            <h2>Como usar o Mapa de Saúde Inclusiva?</h2>
+            <p>Navegue pelo nosso diretório e encontre profissionais e clínicas próximos a você. Leia as avaliações da comunidade e escolha o serviço que melhor atenda às suas necessidades. Se você já utilizou algum dos serviços listados, não se esqueça de deixar sua avaliação para ajudar outras pessoas!</p>
 
-        <h2>Profissional, junte-se a nossa rede!</h2>
-        <p>Se você é um profissional de saúde ou representa uma clínica que deseja fazer parte do <strong>Mapa de Saúde Inclusiva</strong>, entre em contato conosco. Juntos, podemos construir um sistema de saúde mais justo e inclusivo para todos.</p>
+            <h2>Profissional, junte-se a nossa rede!</h2>
+            <p>Se você é um profissional de saúde ou representa uma clínica que deseja fazer parte do <strong>Mapa de Saúde Inclusiva</strong>, entre em contato conosco. Juntos, podemos construir um sistema de saúde mais justo e inclusivo para todos.</p>
 
-        <div class="container-mapa">
-            <h2>Mapa interativo</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58514.247695087535!2d-46.664620883421186!3d-23.56339756873527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1738946458950!5m2!1spt-BR!2sbr" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="container-mapa" itemscope itemtype="https://schema.org/">
+            <h2 itemprop="name">Mapa interativo</h3>
+			<p itemprop="description">Descubra os estabelecimentos que melhor atendem a comunidade LGBTQIA+</p>
+                <iframe itemprop="hasMap" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58514.247695087535!2d-46.664620883421186!3d-23.56339756873527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1738946458950!5m2!1spt-BR!2sbr" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+		            <!-- Schema.org para o serviço mapa de saude inclusiva -->
+            <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "serviceType": "Mapa de Saude Inclusiva",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "PrideHub",
+                    "url": "https://www.pridehub.com"
+                },
+                "description": "Estabelecimentos e profissionais de saude parceiros da comunidade LGBTQIA+",
+                "areaServed": "BR",
+                "availableChannel": {
+                    "@type": "ServiceChannel",
+                    "serviceUrl": "https://www.pridehub.com/mapa-saude.html",
+                    "servicePhone": "+55 (99) 99999-9999",
+                    "serviceEmail": "contato@pridehub.com"
+                }
+            }
+            </script>
+        </article>
     </div>
 
     <!-- Footer -->
-    <footer>
-        <a href="#">Quem Somos</a>
-        <a href="#">Fale Conosco</a>
-        <a href="#">Política de Privacidade</a>
-        <p style="margin-top:20px;">© 2025 PrideHub. Todos os direitos reservados.</p>
+    <footer itemscope itemtype="http://schema.org/Organization">
+        <a href="/quem-somos" itemprop="url">Quem Somos</a>
+        <a href="#" itemprop="url">Fale Conosco</a>
+        <a href="#" itemprop="url">Política de Privacidade</a>
+        <p style="margin-top:20px;">© 2025 <span itemprop="name">PrideHub</span>. Todos os direitos reservados.</p>
     </footer>
 
     <!-- Script para carregar ícones e ativar menu mobile -->

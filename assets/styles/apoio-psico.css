@@ -84,7 +84,7 @@
             margin-top: 40px;
         }
 
-        .testimonial-card {
+        .testimonial-card-psico {
             display: flex;
             align-items: center;
             background-color: #f4f4f4;
@@ -93,29 +93,29 @@
             margin-bottom: 20px;
         }
 
-        .testimonial-card img {
+        .testimonial-card-psico img {
             width: 80px;
             height: 80px;
             border-radius: 50%;
             margin-right: 20px;
         }
 
-        .testimonial-card .testimonial-content {
+        .testimonial-card-psico .testimonial-content {
             flex: 1;
         }
 
-        .testimonial-card h3 {
+        .testimonial-card-psico h3 {
             font-size: 18px;
             margin-bottom: 10px;
         }
 
-        .testimonial-card p {
+        .testimonial-card-psico p {
             font-size: 14px;
             color: #666;
             margin-bottom: 10px;
         }
 
-        .testimonial-card .rating {
+        .testimonial-card-psico .rating {
             color: #FFD700; /* Cor das estrelas */
         }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" itemscope itemtype="http://schema.org/WebPage">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +17,29 @@
     <!-- Flatpickr (Calendário Interativo) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- Schema.org para a organização PrideHub -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PrideHub",
+        "url": "https://www.pridehub.com",
+        "logo": "https://www.pridehub.com/img/logo.png",
+        "description": "PrideHub é um portal que integra serviços e recursos para a comunidade LGBTQIA+, com foco em saúde, educação e empoderamento para reduzir as desigualdades.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55 (99) 99999-9999",
+            "contactType": "customer service",
+            "email": "contato@pridehub.com",
+            "areaServed": "BR"
+        },
+        "sameAs": [
+            "https://www.facebook.com/pridehub",
+            "https://www.instagram.com/pridehub",
+            "https://www.twitter.com/pridehub"
+        ]
+    }
+    </script>
 </head>
 <body>
 
@@ -75,6 +98,7 @@
                     <li><a href="#">Concurso LGBT</a></li>
                 </ul>
             </li>
+            <li><a href="login.html" class="nav-link">Login</a></li>
         </ul>
         <div class="search-bar">
             <input type="text" placeholder="Pesquisar...">
@@ -88,84 +112,109 @@
         <h1>Apoio Psicológico Online</h1>
         <p>O <strong>Apoio Psicológico Online</strong> é uma iniciativa do PrideHub em parceria com psicólogos especializados em questões de gênero e sexualidade. Oferecemos sessões gratuitas e também a preços acessíveis com profissionais cadastrados, engajados em ajudar a comunidade LGBTQIA+ a enfrentar desafios emocionais e psicológicos com plena segurança e privacidade.</p>
 
-        <h2>Eficácia da Orientação Psicológica Online</h2>
-        <p>A terapia online tem se mostrado tão eficaz quanto a terapia presencial, especialmente para pessoas que buscam comodidade, privacidade e flexibilidade. Estudos comprovam que a terapia online pode ajudar no tratamento de ansiedade, depressão, questões de identidade de gênero e orientação sexual, entre outros.</p>
+                <h2>Eficácia da Orientação Psicológica Online</h2>
+                <p>A terapia online tem se mostrado tão eficaz quanto a terapia presencial, especialmente para pessoas que buscam comodidade, privacidade e flexibilidade. Estudos comprovam que a terapia online pode ajudar no tratamento de ansiedade, depressão, questões de identidade de gênero e orientação sexual, entre outros.</p>
 
-        <h2>Como Funciona?</h2>
-        <ul>
-            <li><strong>Agendamento:</strong> Escolha a data e o horário que melhor se encaixam na sua rotina.</li>
-            <li><strong>Videoconferência:</strong> As sessões são realizadas por videoconferência, garantindo privacidade e comodidade.</li>
-            <li><strong>Equipamentos Necessários:</strong> Você precisará de um computador ou smartphone com webcam, microfone e fone de ouvido.</li>
-        </ul>
+                <h2>Como Funciona?</h2>
+                <ul>
+                    <li><strong>Agendamento:</strong> Escolha a data e o horário que melhor se encaixam na sua rotina.</li>
+                    <li><strong>Videoconferência:</strong> As sessões são realizadas por videoconferência, garantindo privacidade e comodidade.</li>
+                    <li><strong>Equipamentos Necessários:</strong> Você precisará de um computador ou smartphone com webcam, microfone e fone de ouvido.</li>
+                </ul>
 
-        <h2>Agende sua Consulta</h2>
-        <p>Preencha o formulário abaixo para agendar sua consulta com um de nossos psicólogos especializados.</p>
+                <h2>Agende sua Consulta</h2>
+                <p>Preencha o formulário abaixo para agendar sua consulta com um de nossos psicólogos especializados.</p>
 
-        <!-- Formulário de Agendamento -->
-        <form class="consulta-form">
-            <label for="name">Nome Completo:</label>
-            <input type="text" id="name" name="name" required>
+                <!-- Formulário de Agendamento -->
+                <form class="consulta-form">
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" name="name" required>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
 
-            <label for="phone">Telefone:</label>
-            <input type="tel" id="phone" name="phone" required>
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" required>
 
-            <label for="date">Data da Consulta:</label>
-            <input type="text" id="date" name="date" placeholder="Selecione a data" required>
+                    <label for="date">Data da Consulta:</label>
+                    <input type="text" id="date" name="date" placeholder="Selecione a data" required>
 
-            <label for="time">Horário da Consulta:</label>
-            <select id="time" name="time" required>
-                <option value="">Selecione o horário</option>
-                <option value="09:00">09:00</option>
-                <option value="10:00">10:00</option>
-                <option value="11:00">11:00</option>
-                <option value="14:00">14:00</option>
-                <option value="15:00">15:00</option>
-                <option value="16:00">16:00</option>
-            </select>
+                    <label for="time">Horário da Consulta:</label>
+                    <select id="time" name="time" required>
+                        <option value="">Selecione o horário</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                    </select>
 
-            <button type="submit">Agendar Consulta</button>
-        </form>
+                    <button type="submit">Agendar Consulta</button>
+                </form>
 
-        <!-- Avaliações de Pacientes -->
-        <div class="testimonials">
-            <h2>Avaliações de Pacientes</h2>
-            <div class="testimonial-card">
-                <img src="https://via.placeholder.com/80" alt="Avatar do usuário">
-                <div class="testimonial-content">
-                    <h3>João Silva</h3>
-                    <p>"A terapia online foi uma experiência incrível. O psicólogo foi muito atencioso e me ajudou a lidar com questões que eu não sabia como enfrentar."</p>
-                    <div class="rating">
-                        <i data-feather="star" fill="gold"></i>
-                        <i data-feather="star" fill="gold"></i>
-                        <i data-feather="star" fill="gold"></i>
-                        <i data-feather="star" fill="gold"></i>
-                        <i data-feather="star" fill="gold"></i>
+                <!-- Avaliações de Pacientes -->
+                <div class="testimonials">
+                    <h2>Avaliações de Pacientes</h2>
+                    <div class="testimonial-card-psico" itemscope itemtype="http://schema.org/Review">
+                        <img src="img/joao80x80.jpg" alt="Avatar do usuário" itemprop="image">
+                        <div class="testimonial-content">
+                            <h3 itemprop="author">João Silva</h3>
+                            <p itemprop="reviewBody">"A terapia online foi uma experiência incrível. O psicólogo foi muito atencioso e me ajudou a lidar com questões que eu não sabia como enfrentar."</p>
+                            <div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                                <meta itemprop="ratingValue" content="5">
+                                <i data-feather="star" fill="gold"></i>
+                                <i data-feather="star" fill="gold"></i>
+                                <i data-feather="star" fill="gold"></i>
+                                <i data-feather="star" fill="gold"></i>
+                                <i data-feather="star" fill="gold"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-psico" itemscope itemtype="http://schema.org/Review">
+                        <img src="img/maria80x80.jpg" alt="Avatar do usuário" itemprop="image">
+                        <div class="testimonial-content">
+                            <h3 itemprop="author">Maria Souza</h3>
+                            <p itemprop="reviewBody">"Recomendo muito o Apoio Psicológico Online do PrideHub. Foi uma experiência transformadora e acessível."</p>
+                            <div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                                <meta itemprop="ratingValue" content="5">
+                                <i data-feather="star" fill="gold"></i>
+                                <i data-feather="star" fill="gold"></i>
+                                <i data-feather="star" fill="gold"></i>
+                                <i data-feather="star" fill="gold"></i>
+                                <i data-feather="star" fill="gold"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="testimonial-card">
-                <img src="https://via.placeholder.com/80" alt="Avatar do usuário">
-                <div class="testimonial-content">
-                    <h3>Maria Souza</h3>
-                    <p>"Recomendo muito o Apoio Psicológico Online do PrideHub. Foi uma experiência transformadora e acessível."</p>
-                    <div class="rating">
-                        <i data-feather="star" fill="gold"></i>
-                        <i data-feather="star" fill="gold"></i>
-                        <i data-feather="star" fill="gold"></i>
-                        <i data-feather="star" fill="gold"></i>
-                        <i data-feather="star" fill="gold"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <!-- Schema.org para o serviço de apoio psicológico -->
+            <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "serviceType": "Apoio Psicológico Online",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "PrideHub",
+                    "url": "https://www.pridehub.com"
+                },
+                "description": "Sessões de terapia online com psicólogos especializados em questões de gênero e sexualidade, acessíveis e seguras.",
+                "areaServed": "BR",
+                "availableChannel": {
+                    "@type": "ServiceChannel",
+                    "serviceUrl": "https://www.pridehub.com/apoio-psico.html",
+                    "servicePhone": "+55 (99) 99999-9999",
+                    "serviceEmail": "contato@pridehub.com"
+                }
+            }
+            </script>
+        </article>
     </div>
 
     <!-- Footer -->
     <footer>
-        <a href="#">Quem Somos</a>
+        <a href="/quem-somos">Quem Somos</a>
         <a href="#">Fale Conosco</a>
         <a href="#">Política de Privacidade</a>
         <p style="margin-top:20px;">© 2025 PrideHub. Todos os direitos reservados.</p>
@@ -179,7 +228,8 @@
             const navbarNav = document.querySelector('.navbar-nav');
             navbarNav.classList.toggle('active');
         }
-		        // Inicialização do Calendário Interativo
+
+        // Inicialização do Calendário Interativo
         flatpickr("#date", {
             dateFormat: "d/m/Y",
             minDate: "today",
