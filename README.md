@@ -21,7 +21,7 @@ O projeto tem como finalidade resolver o seguinte problema: A criação de um po
 ## 🔗 Acesse o Projeto
 
 O site do projeto pode ser acessado através do seguinte link:  
-👉 [PrideHub - Seu lugar inclusivo e acolhedor](https://renatomoraesf.github.io/)
+👉 [PrideHub - Seu lugar inclusivo e acolhedor](https://pridehub.netlify.app/)
 
 ## 📅 Cronograma e Organização
 
